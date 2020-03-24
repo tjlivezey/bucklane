@@ -1,0 +1,76 @@
+{
+    "title": "Aegis Ashore Support Building",
+    "lessons": [
+        {
+            "subsystemTitle":"Power Systems",
+            "items": [
+                {
+                    "title": "Test Intro",
+                    "start": "IntroPowerSystem"
+                },
+                {
+                    "title": "Normal System Operation",
+                    "start": "FullUtilityIntro"
+                },
+                {
+                    "title": "50/60 Hz Single Utility Failure",
+                    "start": "SingleUtililtyFailureIntro"
+                },
+                {
+                    "title": "50/60 Hz Dual Utility Failure",
+                    "start": "DualUtilityFailureIntro"
+                },
+                {
+                    "title": "A Side 400 Hz Failure",
+                    "start": "IntroASideFailure"
+                }
+            ]
+        },
+        {
+            "subsystemTitle": "Water Chiller System",
+            "items": [
+                {
+                    "title": "Chilled Water Normal Systems Operation",
+                    "start": "WaterChillerIntro"
+                },
+                {
+                    "title": "Single System Failure of the Chilled Water System",
+                    "start": "SingleSystemFailureIntro"
+                },
+                {
+                    "title": "Failure of a Chilled Water Return Pump",
+                    "start": "FailureChilledWaterPumpIntro"
+                },
+                {
+                    "title": "Single Failure of Hot Water Pump",
+                    "start": "SingleFailureHotWaterPumpIntro"
+                }
+            ]
+        },
+	{
+            "subsystemTitle":"Crap",
+            "items": [
+                {
+                    "title": "Test Intro",
+                    "start": "IntroPowerSystem"
+                },
+                {
+                    "title": "Normal System Operation",
+                    "start": "FullUtilityIntro"
+                },
+                {
+                    "title": "50/60 Hz Single Utility Failure",
+                    "start": "SingleUtililtyFailureIntro"
+                },
+                {
+                    "title": "50/60 Hz Dual Utility Failure",
+                    "start": "DualUtilityFailureIntro"
+                },
+                {
+                    "title": "A Side 400 Hz Failure",
+                    "start": "IntroASideFailure"
+                }
+            ]
+        }
+    ]
+}

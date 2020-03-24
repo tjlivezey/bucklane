@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=11">
+    <title>Aegis Ashore Support Building</title>
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    
+    <script src="../public/js/Libraries/jquery-3.3.1.js"></script>
+    <script src="../public/js/Libraries/bootstrap.min.js"></script>
+    <script language="javascript" src="../public/js/Libraries/APIWrapper.js"></script>  		
+    
+    <script src="../public/js/Utils.js"></script>
+    <script src="../public/js/Helper.js"></script>
+    <script src="../public/js/Loader.js"></script>
+    <script src="../public/js/SideBar.js"></script>
+    <script src="../public/js/App.js"></script>
+    <script type="text/javascript" src="../public/js/sco.js"></script>
+    <script>
+      if (window.location.href.indexOf('localhost') == -1) {
+        App.isLMS = true;
+        var link = document.createElement('link');
+        link.setAttribute('rel', 'stylesheet');
+        link.type = 'text/css';
+        link.onload = function() {
+          document.body.style.visibility = 'visible';
+        };
+
+        link.href = '../public/css/lms.css';
+        document.head.appendChild(link);
+      }
+
+      window.addEventListener('DOMContentLoaded', function() {
+        // Exit button on completion modal
+        let button = document.querySelector("#exitSim");
+
+        if (window.location.href.indexOf('localhost') > -1) {
+          document.body.style.visibility = 'visible';
+          
+          button.addEventListener('click', function() {
+            $('#exit').modal('hide');
+          });
+        }
+        else {
+          button.addEventListener('click', function() {
+            self.close();
+          });
+        }
+
+        App.initialize();
+
+        if (App.isLMS == true) {
+          window.onbeforeunload = function () {
+            opener.closeLesson();
+          };
+        }
+      });
+
+      // Callback from iFrame
+      function iFrameLoaded() {
+        document.querySelector('.mask').style.display = 'none';
+      }
+    </script>
+</head>
+<body style="visibility: hidden;">
+    <div class="main">
+        <header>
+            <span class="logo"></span>
+            <span class="sim-title"></span>
+            <span class="lesson-title"></span>
+            <span class="header-commands">
+                <button type="button" data-toggle="modal" data-target="#glossary">Glossary</button>
+                <button type="button" id="btnReference" data-toggle="modal" data-target="#references">References</button>
+                <button type="button" onclick="self.close();">Exit</button>
+            </span>
+        </header>
+        <nav class="sidebar"></nav>
+        <iframe id="contentFrame" frameborder="0"></iframe>
+        <div class="mask"></div>
+        <footer>
+            <div class="output"></div>
+            <div class="controls">
+                <button title="Previous" class="action back"></button>
+                <button title="Pause" class="action pause"></button>
+                <button title="Restart" class="action restart"></button>
+                <button id="btnForward" title="Next" class="action forward"></button>
+            </div>
+        </footer>
+        <div class="highlight"></div>
+    </div>
+
+    <!-- Glossary Modal -->
+    <div class="modal fade" id="glossary">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Glossary</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reference Modal -->
+  <div class="modal fade" id="references">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">References</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div><span class="reference hobart" data-type="pdf">Hobart 400 HZ Converter Manual</span></div>
+          <div><span class="reference" data-type="pdf">Systems Definition Document Rev 1</span></div>
+          <div><span class="reference abb" data-type="pdf">ABB 50/60 Hertz Converter Operation and Maintenance Manual</span></div>
+		  <div><span class="reference maint" data-type="pdf">Operation and Maintenance Manuals</span></div>
+          <div><span class="reference grundfos" data-type="pdf">Grundfos ML Motors Manual</span></div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="challenge">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Challenge Question</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div><span class="question"></span></div>
+          <div class="answers">
+
+          </div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <span class="answerFeedback"></span>
+          <button id="resetAnswer" type="button" class="btn .btn-secondary">Reset</button>
+          <button id="checkAnswer" type="button" class="btn .btn-primary">Submit</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exit">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Lesson Completed</h4>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div>Congratulations! The lesson has been completed.<br><br>Please click Exit to close the lesson.</div>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="exitSim" type="button" class="btn .btn-secondary">Exit</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</body>
+</html>

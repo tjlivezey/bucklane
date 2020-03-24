@@ -1,0 +1,392 @@
+{
+    "glossary": [
+        {
+            "acronym": "DUMMY",
+            "term": "TEST GLOSSARY ITEM"
+        },
+	{
+            "acronym": "AA",
+            "term": "Aegis Ashore"
+        },
+        {
+            "acronym": "ABT",
+            "term": "Automatic Bus Transfer Switch"
+        },
+        {
+            "acronym": "AC",
+            "term": "Air Conditioning"
+        },
+        {
+            "acronym": "ACS",
+            "term": "Aegis Combat System"
+        },
+        {
+            "acronym": "AED",
+            "term": "Air Electronic Dry"
+        },
+        {
+            "acronym": "AFPS",
+            "term": "Arc Flash Protection System"
+        },
+        {
+            "acronym": "AHU",
+            "term": "Air Handling Units"
+        },
+        {
+            "acronym": "ALP",
+            "term": "Air Low Pressure"
+        },
+        {
+            "acronym": "AN",
+            "term": "Army Navy"
+        },
+        {
+            "acronym": "APC",
+            "term": "American Power Conversion"
+        },
+        {
+            "acronym": "ASCO",
+            "term": "Automatic Switch Company"
+        },
+        {
+            "acronym": "BAS",
+            "term": "Building Automation Systems"
+        },
+        {
+            "acronym": "C&#38;D",
+            "term": "Command &#38; Decision"
+        },
+        {
+            "acronym": "CBR",
+            "term": "Chemical, Biological and Radiation"
+        },
+        {
+            "acronym": "CCA",
+            "term": "Circuit Card Assembly"
+        },
+        {
+            "acronym": "CCS",
+            "term": "Central Control Station"
+        },
+        {
+            "acronym": "CD",
+            "term": "Compact Disk"
+        },
+        {
+            "acronym": "CFM",
+            "term": "Cubic Feet per Minute"
+        },
+        {
+            "acronym": "CG",
+            "term": "Cruiser"
+        },
+        {
+            "acronym": "CHW",
+            "term": "Cooler Primary Coolant"
+        },
+        {
+            "acronym": "CHWR",
+            "term": "Chilled Water Return"
+        },
+        {
+            "acronym": "CHWS",
+            "term": "Chilled Water Supply"
+        },
+        {
+            "acronym": "CIC",
+            "term": "Combat Information Center"
+        },
+        {
+            "acronym": "CMD",
+            "term": "Command"
+        },
+        {
+            "acronym": "CRAC",
+            "term": "Computer Room Air Conditioner"
+        },
+        {
+            "acronym": "CRU",
+            "term": "Computer Room Unit"
+        },
+        {
+            "acronym": "CS",
+            "term": "Combat System"
+        },
+        {
+            "acronym": "CSER",
+            "term": "Combat Systems Equipment Room"
+        },
+        {
+            "acronym": "CSMC",
+            "term": "Combat System Maintenance Central"
+        },
+        {
+            "acronym": "CW",
+            "term": "Chilled Water"
+        },
+        {
+            "acronym": "DCW",
+            "term": "Domestic Cold Water"
+        },
+        {
+            "acronym": "DH",
+            "term": "Deckhouse"
+        },
+        {
+            "acronym": "DHSB",
+            "term": "Deckhouse Support Building"
+        },
+        {
+            "acronym": "DIAS",
+            "term": "Dynalec Integrated Announcing System"
+        },
+        {
+            "acronym": "EA",
+            "term": "Engineering Assessment"
+        },
+        {
+            "acronym": "ECB",
+            "term": "Enclosed Circuit Breaker"
+        },
+        {
+            "acronym": "ECW",
+            "term": "Electronic Chilled Water"
+        },
+        {
+            "acronym": "EMI",
+            "term": "Electro Magnetic Interference"
+        },
+        {
+            "acronym": "EOSS",
+            "term": "Engineering Operational Sequencing System"
+        },
+        {
+            "acronym": "FACP",
+            "term": "Fire Alarm Control Panel"
+        },
+        {
+            "acronym": "FCS",
+            "term": "Fire Control System"
+        },
+        {
+            "acronym": "FPA",
+            "term": "Final Power Amplifier"
+        },
+        {
+            "acronym": "FWD",
+            "term": "Forward"
+        },
+        {
+            "acronym": "GEDMS",
+            "term": "Gigabit Ethernet Data Multiplex System"
+        },
+        {
+            "acronym": "GFPS",
+            "term": "Ground Fault Protection System"
+        },
+        {
+            "acronym": "HEMP",
+            "term": "High Altitude Electro Magnetic Pulse"
+        },
+        {
+            "acronym": "HGR",
+            "term": "High Ground Resistance"
+        },
+        {
+            "acronym": "HVAC",
+            "term": "Heating, Ventilating, Air Conditioning"
+        },
+        {
+            "acronym": "Hz",
+            "term": "Hertz"
+        },
+        {
+            "acronym": "KW",
+            "term": "Kilo Watts"
+        },
+        {
+            "acronym": "LCD",
+            "term": "Liquid Crystal Display"
+        },
+        {
+            "acronym": "LCU",
+            "term": "Launcher Control Unit"
+        },
+        {
+            "acronym": "LME",
+            "term": "Launcher Module Enclosures"
+        },
+        {
+            "acronym": "LP",
+            "term": "Low Pressure"
+        },
+        {
+            "acronym": "LPDA",
+            "term": "Low Pressure Dry Air"
+        },
+        {
+            "acronym": "LSUE",
+            "term": "VLS Support Utility Enclosure"
+        },
+        {
+            "acronym": "LVSB",
+            "term": "Low Voltage"
+        },
+        {
+            "acronym": "MAU",
+            "term": "Makeup Air Units"
+        },
+        {
+            "acronym": "MBD",
+            "term": "Mixed Bed Deionizer"
+        },
+        {
+            "acronym": "MBP",
+            "term": "Maintenance Bypass Panel"
+        },
+        {
+            "acronym": "MCE",
+            "term": "Mission Critical Enclosure"
+        },
+        {
+            "acronym": "MCPE",
+            "term": "Mission Critical Power Enclosure"
+        },
+        {
+            "acronym": "MOV",
+            "term": "Motor Operated Valve"
+        },
+        {
+            "acronym": "ms",
+            "term": "Millisecond"
+        },
+        {
+            "acronym": "NBC",
+            "term": "Nuclear, Biological, Chemical"
+        },
+        {
+            "acronym": "NBCCS",
+            "term": "Nuclear, Biological, Chemical Containment Survivability"
+        },
+        {
+            "acronym": "NIPR",
+            "term": "Non-Classified Internet Protocol Router"
+        },
+        {
+            "acronym": "O&#38;M",
+            "term": "Operation &#38; Maintenance"
+        },
+        {
+            "acronym": "OEM",
+            "term": "Original Equipment Manufacturer"
+        },
+        {
+            "acronym": "OJT",
+            "term": "On the Job Training"
+        },
+        {
+            "acronym": "ORTS",
+            "term": "Operational Readiness Test System"
+        },
+        {
+            "acronym": "P/N",
+            "term": "Part Number"
+        },
+        {
+            "acronym": "PCMS",
+            "term": "Power Control Monitoring System"
+        },
+        {
+            "acronym": "PDI",
+            "term": "Power Distribution Inc."
+        },
+        {
+            "acronym": "PLC",
+            "term": "Programable Logic Controller"
+        },
+        {
+            "acronym": "PSI",
+            "term": "Pounds per Square Inch"
+        },
+        {
+            "acronym": "RDH",
+            "term": "Reconstitutable Deckhouse"
+        },
+        {
+            "acronym": "REU",
+            "term": "Removable Equipment Unit"
+        },
+        {
+            "acronym": "S/N",
+            "term": "Serial Number"
+        },
+        {
+            "acronym": "SABT",
+            "term": "Static Automatic Bus Transfer Switch"
+        },
+        {
+            "acronym": "SDD",
+            "term": "System Definition Document"
+        },
+        {
+            "acronym": "SIPR",
+            "term": "Secret Internet Protocol Router"
+        },
+        {
+            "acronym": "STBD",
+            "term": "Starboard"
+        },
+        {
+            "acronym": "STCP",
+            "term": "Shunt Trip Control Panel"
+        },
+        {
+            "acronym": "STE",
+            "term": "System Test Equipment"
+        },
+        {
+            "acronym": "STFPS",
+            "term": "Shunt Trip Fire Protection System"
+        },
+        {
+            "acronym": "SUS",
+            "term": "Secondary Unit Substation"
+        },
+        {
+            "acronym": "TFA",
+            "term": "Toxic Free Area"
+        },
+        {
+            "acronym": "TVSS",
+            "term": "Transient Voltage Surge Suppression"
+        },
+        {
+            "acronym": "UCC",
+            "term": "Universal Control Console"
+        },
+        {
+            "acronym": "UPS",
+            "term": "Uninterruptible Power Supply"
+        },
+        {
+            "acronym": "VAV",
+            "term": "Variable Air Volume"
+        },
+        {
+            "acronym": "VFD",
+            "term": "Variable Frequency Drive"
+        },
+        {
+            "acronym": "VGI",
+            "term": "Video Graphics Interface"
+        },
+        {
+            "acronym": "VLS",
+            "term": "Vertical Launching System"
+        },
+        {
+            "acronym": "VUE",
+            "term": "VLS Utility Enclosure"
+        }
+    ]
+}

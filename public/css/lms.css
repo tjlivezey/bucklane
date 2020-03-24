@@ -1,0 +1,31 @@
+.sidebar {
+    left: -2000px;
+    top: -2000px;
+}
+
+header > .logo {
+    height: 54px;
+    width: 100px;
+    background-position-x: 24px;
+    background-size: 46px 50px;
+}
+
+header > .sim-title, header > .lesson-title {
+    left: 120px;
+}
+
+header > .header-commands {
+    right: 300px;
+}
+
+iframe, .mask {
+    left: 6px;
+}
+
+.output {
+    left: 6px;
+}
+
+.controls {
+    right: 290px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <script>
+        let pdf = null;
+        let wrapper = null;
+
+        window.addEventListener("DOMContentLoaded", () => {
+            let file = decodeURI(window.location.toString().split("references/")[1]);
+            document.title = file;
+            pdf = document.querySelector("#pdf");
+            wrapper = document.querySelector("#wrapper");
+            pdf.src = "references/" + file;
+
+            pdf.addEventListener('did-finish-load', () => {
+                window.resizeTo(window.outerWidth + 1, window.outerHeight + 1);
+            });
+        });
+
+        window.addEventListener("resize", () => {
+            pdf.style.width = window.innerWidth - 10 + "px";
+            pdf.style.height = window.innerHeight - 10 + "px";
+            wrapper.style.width = window.innerWidth - 10 + "px";
+            wrapper.style.height = window.innerHeight - 10 + "px";
+        });
+    </script>
+</head>
+<body>
+        <div id="wrapper" style="width: 800px; height: 600px">
+            <webview id="pdf" src="#" style="width:800px; height:600px" plugins></webview>
+        </div>
+</body>
+</html>
